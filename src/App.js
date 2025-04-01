@@ -14,12 +14,19 @@ function App() {
 
 
     // },1000)
-    setCount(count +1);
+    setCount(count +2);
     
     
   },[lastCount]);
+
   const counter=()=>{
-    setLastCount(lastCount + 1);
+    setCount(count +1);
+    if(count % 5 ===0){
+      setLastCount(lastCount + 2);
+      
+    }
+
+    
     
   };
 
