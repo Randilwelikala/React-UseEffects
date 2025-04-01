@@ -14,7 +14,7 @@ function App() {
 
 
     // },1000)
-    setCount(count +2);
+    console.log("useEffect triggered");
     
     
   },[lastCount]);
