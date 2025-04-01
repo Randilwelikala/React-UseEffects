@@ -15,7 +15,7 @@ function App() {
     },1000)
     
     
-  });
+  },[count]);
   return (
     <div className="App">
       <header className="App-header">
