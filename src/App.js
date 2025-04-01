@@ -5,17 +5,24 @@ import { useEffect,useState } from 'react';
 function App() {
 
   const[count,setCount]= useState(0);
+  const[lastCount,setLastCount]= useState(0);
 
   useEffect(()=>{
 
-    setTimeout(()=>{
-      setCount(count + 1);
+    // setTimeout(()=>{
+    //   setCount(count + 1);
 
 
-    },1000)
+    // },1000)
+    setCount(count +1);
     
     
-  },[count]);
+  },[]);
+  const counter=()=>{
+    setLastCount(lastCount + 1);
+    
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -24,6 +31,8 @@ function App() {
           UseEffect Hook
         </p>
         <p>Count Value = {count}</p>
+        <button onClick ={counter}>Click Me</button>
+        <p>Count Value =  {lastCount} </p>
         
         
       </header>
