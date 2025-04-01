@@ -15,9 +15,12 @@ function App() {
 
     // },1000)
     console.log("useEffect triggered");
+    return()=>{
+      console.log("Cleanup function")
+    }
     
     
-  },[count,lastCount]);
+  },[count]);
 
   const counter=()=>{
     setCount(count +1);
