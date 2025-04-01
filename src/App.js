@@ -17,7 +17,7 @@ function App() {
     console.log("useEffect triggered");
     
     
-  },[lastCount]);
+  },[count,lastCount]);
 
   const counter=()=>{
     setCount(count +1);
