@@ -17,7 +17,7 @@ function App() {
     setCount(count +1);
     
     
-  },[]);
+  },[lastCount]);
   const counter=()=>{
     setLastCount(lastCount + 1);
     
